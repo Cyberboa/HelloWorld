@@ -6,7 +6,7 @@ from django.test import TestCase
 def cut_string(string):
     listOfCharacters = []
     string = input('Type in a word')
-    file = open('../myScript.txt', "w")
+    file = open('myScript.txt', "w")
     """index starts with 0 / words -2 the right ending"""
     for index in range(0, len(string) - 2):
         "Insert String to list"
@@ -32,6 +32,6 @@ def add_to_file(string, file):
 
 
 print(cut_string("Hello World "))
-openFile = open('../myScript.txt')
+openFile = open('myScript.txt')
 readfile = openFile.read()
 print(readfile)
